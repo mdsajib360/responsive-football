@@ -1,17 +1,62 @@
 /* common styles  */
-html,body{
-    height: 100%;
-}
+
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
 }
 
 
 /* header content styles  */
 
+    .top-banner{
+        background-color: #2D25A0;
+        padding:50px 0;
+    }
+
+    .container{
+        padding-top: 10%;
+        width: 70%;
+        margin:auto;
+    }
+
+    .header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-right img{
+        width: 100%;
+    }
+
+    .header-left h1{
+        font-size: 64px;
+        color: #ffff;
+    }
+
+
+
+
+
+
+
+
+
+
+ 
+  
+   
+  .btn{
+      text-decoration: none;
+      color: #FFFF;
+      display: inline-block;
+      background-color:#E02C6D;
+      padding:10px 24px;
+  }
 /* main start here  */
 .players{
     width: 80%;
+    margin-top: -250px;
 } 
 
 .player{
@@ -24,20 +69,17 @@ body{
     row-gap: 30;
     
  }
- .grid-box{
-     display: grid;
 
- }
  .player-details-box{
     width: 340px;
     padding-left: 9px;
     height: 475px;
     margin: 20px auto;
     padding-bottom: 15px;
-    box-shadow: 0px 0px 3px 0px rgb(155, 154, 154);
+    box-shadow: 0px 0px 5px 0px rgb(155, 154, 154);
  }
  .player-details-box:hover{
-    box-shadow: 3px 3px 10px 3px gray;
+    box-shadow: 3px 23px 45px 1px gray;
  }
  .player-details-box h3{
      font-weight: 700;
@@ -54,19 +96,157 @@ body{
     margin: 16px;
 }
 
+/* highlight section start here  */
+
+
+.right-width{
+    width: 50%;
+}
+
+.right-width img{
+
+width: 567px;
+height: 427px;
+
+}
+
+.highlight-grid{
+    display: flex;
+    margin-left: 22%;
+    justify-content: center;
+}
+
+.highlight-grid h1{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 48px;
+    
+}
+
+
+/* highlight section end here  */
+
+
+/* foooter part start here  */
+
+.logo{
+    text-align: center;
+}
+.logo img {
+width: 483.87px;
+height:110px;
+}
+
+
+.flex-icon{
+    display: flex;
+    justify-content: center;
+}
+.flex-icon li{
+    list-style: none;
+    letter-spacing: 14px;
+    
+}
+
+.copyright-icon p{
+    text-align: center;
+}
+
+/* higlight section end  */
+
+
+
+
+
 
 /* Media query section  */
 
 /* --------------------
 player details box 
 ------------------- */
+ /* media for boxes
+ (for mobiles) */
 
-@media only screen and (max-width:688px){
+ @media only screen and (max-width:688px) {
+    .players{
+        margin-top: 3%;
+    }
+    
     .player{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 5%;
         justify-content: center;
     }
+    
+
+    .container{
+        width: 80%;
+        margin:auto;
+        
+    }
+
+    .header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 60px;
+        
+
+    }
+
+    .header-right img{
+        width: 350px;
+    }
+    
+    .header-left h1{
+        font-size: 24px;
+        color: #ffff;
+    }
+
+  
+  /* logo img responsiv  */
+ 
+
+
 }
 
+
+
+
+/*---------------------
+media for tablets 
+media for top section
+--------------------- */
+@media only screen and (min-width:688px) and (max-width:992px){
+        
+    .players{
+        padding-top: 20%;
+    }
+
+
+    .player{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3%;
+        justify-content: center;
+    }
+
+            
+
+    .container{
+        width: 80%;
+    }
+
+    .header-right img{
+        width: 100%;
+    }
+    .header-left h1{
+        font-size: 25px;
+    }
+ 
+        
+
+}
 /*media query end*/
+
+/* img animaiton  */
