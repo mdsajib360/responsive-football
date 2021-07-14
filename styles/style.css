@@ -99,29 +99,32 @@ body{
 /* highlight section start here  */
 
 
-.right-width{
-    width: 50%;
+.highlight{
+    width: 80%;
+    margin-left:350px;
+    padding-top:10%;
+    margin-top:-390px ;
+    margin-bottom:50px
 }
 
-.right-width img{
-
-width: 567px;
-height: 427px;
-
+.highlight-blog{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
 }
 
-.highlight-grid{
-    display: flex;
-    margin-left: 22%;
-    justify-content: center;
+.highlight-right img{
+    width: 100%;
 }
-
-.highlight-grid h1{
-    display: inline-block;
-    font-weight: 700;
+.highlight h1{
     font-size: 48px;
-    
+    font-weight: 700;
+    line-height: 60px;
 }
+.highlight h1{
+    display: inline-block;
+}
+
 
 
 /* highlight section end here  */
@@ -205,6 +208,35 @@ player details box
         color: #ffff;
     }
 
+    /* .highlight section  */
+
+    .highlight{
+        width: 40%;
+        height: 650px;
+    }
+    
+    .highlight-blog{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 150px;
+        margin-top:300px;
+        margin-left: -330px;
+    }
+    
+    .highlight-right img{
+        width: 300px;
+        margin-top:30px;
+    }
+    .highlight h1{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+    .highlight h1{
+        display: inline-block;
+    }
+    
+
   
   /* logo img responsiv  */
 .footer-part{
@@ -212,6 +244,7 @@ player details box
 }
 
 .logo img{
+    margin-top: 30%;
     width: 250px;
     height: 63px;
 }
@@ -235,8 +268,8 @@ media for top section
 
     .player{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 3%;
+        grid-template-columns: repeat(1, 1fr);
+     
         justify-content: center;
     }
 
