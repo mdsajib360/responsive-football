@@ -1,0 +1,72 @@
+/* common styles  */
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* header content styles  */
+
+/* main start here  */
+.players{
+    width: 80%;
+} 
+
+.player{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:20%;
+    margin-left: 22%;
+    column-gap: 30;
+    row-gap: 30;
+    
+ }
+ .grid-box{
+     display: grid;
+
+ }
+ .player-details-box{
+    width: 340px;
+    padding-left: 9px;
+    height: 475px;
+    margin: 20px auto;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 3px 0px rgb(155, 154, 154);
+ }
+ .player-details-box:hover{
+    box-shadow: 3px 3px 10px 3px gray;
+ }
+ .player-details-box h3{
+     font-weight: 700;
+     font-size:28px ;
+     color: #18191F;
+ }
+ .player-details-box h3{
+     font-size: 16px;
+ }
+
+.player img {
+    width: 300px;
+    height: 256px;
+    margin: 16px;
+}
+
+
+/* Media query section  */
+
+/* --------------------
+player details box 
+------------------- */
+
+@media only screen and (max-width:688px){
+    .player{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+}
+
+/*media query end*/
