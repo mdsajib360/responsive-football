@@ -35,6 +35,7 @@ body{
     }
 
 
+    
 
 
 
@@ -302,3 +303,20 @@ media for top section
 /*media query end*/
 
 /* img animaiton  */
+
+@keyframes pulse {
+    50% {
+      transform:scale(0.9);
+    }
+    100% {
+      transform:scale(1.0);
+    }
+  }
+ 
+    .player-img:hover{
+        animation:pulse infinite;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-out;
+        
+        
+    }
