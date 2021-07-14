@@ -129,6 +129,8 @@ height: 427px;
 
 /* foooter part start here  */
 
+
+
 .logo{
     text-align: center;
 }
@@ -205,7 +207,14 @@ player details box
 
   
   /* logo img responsiv  */
- 
+.footer-part{
+    width: 60%;
+}
+
+.logo img{
+    width: 250px;
+    height: 63px;
+}
 
 
 }
@@ -244,7 +253,17 @@ media for top section
         font-size: 25px;
     }
  
-        
+    
+    /* footer-logo part  */
+    .footer-part{
+        width: 60%;
+    }
+    
+    .logo img{
+        width: 400px;
+        height: 103px;
+    }
+    
 
 }
 /*media query end*/
